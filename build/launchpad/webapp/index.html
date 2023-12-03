@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title> Project Preview </title>
+    <title> Application Overview </title>
     <script src="shared-config.js"></script>
     <script src="https://ui5.sap.com/1.108.7/resources/sap-ui-core.js" 
             id="sap-ui-bootstrap"
@@ -28,7 +28,7 @@
                     return Controller.extend("PreviewController", {
                         onInit: function () {
 
-                            const data = {"Services":[{"ServiceName":"RiskMngtService","DetailsURL":"./service/RiskMngt/","Metadata":"./service/RiskMngt/$metadata","Entities":[{"Name":"Risks","URL":"./service/RiskMngt/Risks","FioriURL":"$fiori-preview/RiskMngtService/Risks#preview-app"},{"Name":"Mitigations","URL":"./service/RiskMngt/Mitigations","FioriURL":"$fiori-preview/RiskMngtService/Mitigations#preview-app"},{"Name":"A_BusinessPartner","URL":"./service/RiskMngt/A_BusinessPartner","FioriURL":"$fiori-preview/RiskMngtService/A_BusinessPartner#preview-app"}],"EntitiesCount":3}]}
+                            const data = {"Services":[{"ServiceName":"RiskMngtService","DetailsURL":"./service/RiskMngt/","Metadata":"./service/RiskMngt/$metadata","Entities":[{"Name":"Risks","URL":"./service/RiskMngt/Risks","FioriURL":""},{"Name":"Mitigations","URL":"./service/RiskMngt/Mitigations","FioriURL":""},{"Name":"A_BusinessPartner","URL":"./service/RiskMngt/A_BusinessPartner","FioriURL":""}],"EntitiesCount":3}]}
                             this.getView().setModel(new JSONModel(data));
                         }
                     });
